@@ -1,0 +1,62 @@
+.slide{
+	position: relative;
+	overflow: hidden;
+}
+.slide *{
+	margin: 0;
+	padding: 0;
+}
+.slide li{
+	list-style: none;
+	float: left;
+}
+
+.slide>ul,.slide>ol{
+	position: absolute;
+}
+.slide>ul{
+	left: 0;
+	top: 0;
+}
+.slide>ol{
+	right: 0;
+	bottom: 0;
+}
+
+.slide>ol>li{
+	padding: 10px;
+}
+.slide>ol>li>span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background: white;
+	cursor: pointer;
+}
+
+.slide .selected{
+	background: yellowgreen;
+}
+
+.slide>p{
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 15px;
+	background: white;
+	cursor: pointer;
+	opacity: 0;
+}
+.slide>p:hover{
+	background: yellowgreen;
+}
+.slide>p:nth-child(3){
+	left: 10px;
+}
+.slide>p:nth-child(4){
+	right: 10px;
+}
